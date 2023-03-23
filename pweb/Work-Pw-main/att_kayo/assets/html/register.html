@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Login</title>
+</head>
+<body>
+    <div  id="msgError"></div>
+    <div  id="msgSucess"></div>
+    <form>
+		<label for="labelNome" id="labelNome">Nome:</label>
+		<input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+
+		<label for="labelUsuario" id="labelUsuario">Usuário:</label>
+		<input type="text" id="usuario" name="usuario" placeholder="Digite um nome de usuário">
+
+		<label for="labelSenha" id="labelSenha">Senha:</label>
+		<input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+		<label for="confirmSenha" id="LabelconfirmSenha">Confirmar Senha:</label>
+		<input type="password" id="confirmSenha" name="confirmSenha" placeholder="Digite novamente sua senha">
+
+		<button type="button" id="cadastro" onclick="cadastrar()">Cadastrar</button>
+	</form>
+   
+    <script src="../js/register.js"></script>
+</body>
+</html>

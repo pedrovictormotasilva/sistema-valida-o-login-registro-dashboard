@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/usuario.css" />
+    <link rel="icon" href="../img/iconvasco.png" />
+    <title>Dashboard</title>
+  </head>
+  <body style="margin: 25px ;">
+    <h1>Dashboard</h1>
+
+    <form id="infos-prod">
+      <label for="name">Nome do produto: </label>
+      <input type="text" id="nome" name="nome" placeholder="Ex: Arroz 150g" />
+
+      <label for="preco">Valor pago: </label>
+      <input type="text" id="preco" name="preco" placeholder="em R$" />
+      
+      <div class="checkbox">
+        <input type="checkbox" id="prime" name="prime" />
+        <span tabindex="0"></span>
+        <label for="prime">Frete grátis?</label>
+      </div>
+
+      <input type="hidden" name="idx" id="idx" value="novo" />
+      <center><input type="submit" value="Salvar" /></center>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Quantidade</th>
+          <th>Nome do produto</th>
+          <th>Valor pago</th>
+          <th>Produtos</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <button id="sair">Sair</button>
+
+    <script src="../js/usuario.js"></script>
+  </body>
+</html>

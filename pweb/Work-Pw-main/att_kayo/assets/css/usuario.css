@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* Configurações gerais */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid #555;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  border-color: #000000;
+  background-color: #000000;
+border-color: #333;
+}
+
+.checkbox label {
+  padding-bottom: 0.5em;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#infos-prod {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#infos-prod label {
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+}
+
+#infos-prod input[type="text"] {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#infos-prod input[type="submit"] {
+  font-size: 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#infos-prod input[type="submit"]:hover {
+  background-color: #b71c1c;
+  cursor: pointer;
+}
+
+#sair {
+  font-size: 18px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: block;
+  margin: 20px auto;
+}
+
+#sair:hover {
+  background-color: #b71c1c;
+  cursor: pointer;
+}
